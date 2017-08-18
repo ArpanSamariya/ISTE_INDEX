@@ -11,9 +11,9 @@
 }
 .ISTE_NAME{
     position:relative;
-    top:-70px;
+    top:-68px;
     left:18%;
-    font-size:40px;
+    font-size:45px;
     color: #1a395f;
 }
 .nav{
@@ -23,5 +23,23 @@
 .main_nav{
     position:relative;
     top: -35px;
-    left: 8%;
+    left: 10%;
+}
+.navbar-default .navbar-nav > li.dropdown:hover > a,
+.navbar-default .navbar-nav > li.dropdown:hover > a:hover,
+.navbar-default .navbar-nav > li.dropdown:hover > a:focus {
+    background-color: rgb(231, 231, 231);
+    color: rgb(85, 85, 85);
+}
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+.slider{
+    position: relative;
+    left:10%;
+    top:-40px;
+}
+.main{
+    position: relative;
+    left: 70px;
 }

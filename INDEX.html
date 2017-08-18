@@ -21,24 +21,82 @@
 
     <p class="upper_border"></p>
 
-    <div>
-        <a href="#"><img class="logo"src="Images/WhatsApp Image 2017-08-11 at 12.27.05 AM.jpeg" height="578" width="578"/></a>
+    <div class="main">
 
-        <p class="ISTE_NAME">Indian Society For Technical Education</p>
-    </div>
 
-    <nav style="border: none" class="navbar navbar-default nav">
-        <div class="main_nav">
-            <ul class="nav navbar-nav">
-                <li><a>                        </a></li>
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Page 1</a></li>
-                <li><a href="#">Page 2</a></li>
-                <li><a href="#">Page 3</a></li>
-            </ul>
+
+        <div>
+            <a href="#"><img class="logo"src="Images/WhatsApp Image 2017-08-11 at 12.27.05 AM.jpeg" height="578" width="578"/></a>
+
+            <p class="ISTE_NAME">Indian Society For Technical Education</p>
+        </div>
+
+        <nav style="border: none" class="navbar navbar-default nav">
+            <div class="main_nav">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Events
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Past Events</a></li>
+                            <li><a href="#">Upcoming Events</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Team ISTE
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Final Year</a></li>
+                            <li><a href="#">Third Year</a></li>
+                            <li><a href="#">Second Year</a></li>
+                            <li><a href="#">First Year</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Gallery</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div class="slider">
+
+            <div class="w3-content w3-section" style="max-width:500px">
+
+
+
+                <img class="mySlides" src="Images/DSC_0441.JPG" height="500" width="900"/>
+                <img class="mySlides" src="Images/DSC_0428.JPG" height="500" width="900"/>
+                <img class="mySlides" src="Images/DSC_0415.JPG" height="500" width="900"/>
+
+
+            </div>
+
+            <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}
+                    x[myIndex-1].style.display = "block";
+                    setTimeout(carousel, 3000); // Change image every 2 seconds
+                }
+            </script>
 
         </div>
-    </nav>
+
+    </div>
+
+
 
 </body>
 
